@@ -2,12 +2,13 @@ from dataclasses import dataclass
 
 @dataclass
 class ExceptionManager:
-
-    critical_exceptions_count: int = 0
-    non_critical_exceptions_count: int = 0
+    
     """
     ExceptionManager class handles Exception type
     """
+
+    critical_exceptions_count: int = 0
+    non_critical_exceptions_count: int = 0
 
     def is_critical(self, e: Exception):
         if isinstance(e, TypeError):
