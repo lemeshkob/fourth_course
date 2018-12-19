@@ -9,7 +9,7 @@ class TestIsChecked(TestCase):
         self.e_manager = ExceptionManager()
 
     def tearDown(self):
-        print("\n============ENDED============\n")
+        print(str(self._testMethodName) + "\n============ENDED============\n")
 
 
     def test_exception_manager_is_critical_method_positive(self):

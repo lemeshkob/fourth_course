@@ -1,0 +1,92 @@
+{
+  "id": "ddca421c-ccde-42a0-9416-7f98dfd9604a",
+  "version": "1.1",
+  "name": "QA",
+  "url": "https://rozetka.com.ua",
+  "tests": [{
+    "id": "9d50c8b2-823c-4353-8189-635580be15bc",
+    "name": "Untitled",
+    "commands": [{
+      "id": "27844923-5574-4186-b5f3-8c7adf7258b2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc4aa193-6f50-4893-9b04-33bc9e01868f",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=input[name=\"search\"]", "css"],
+        ["css=.search__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ssd"
+    }, {
+      "id": "9b5e7bd7-bcc3-4e03-9cf3-34eefe125efe",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=.search__button",
+      "targets": [
+        ["css=.search__button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cb81f80-5779-4c97-b03d-115de138ef06",
+      "comment": "",
+      "command": "clickAt",
+      "target": "css=#image_item14606576 img",
+      "targets": [
+        ["css=#image_item14606576 img", "css:finder"],
+        ["xpath=//img[@alt='Kingston SSDNow A400 120GB 2.5\" SATAIII TLC (SA400S37/120G)']", "xpath:img"],
+        ["xpath=//div[@id='image_item14606576']/a/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6d6e780-2816-464b-b9aa-8c242e18041c",
+      "comment": "",
+      "command": "clickAt",
+      "target": "name=topurchases",
+      "targets": [
+        ["name=topurchases", "name"],
+        ["css=button[name=\"topurchases\"]", "css"],
+        ["css=.detail-buy-btn-link > .btn-link-i", "css:finder"],
+        ["xpath=//button[@name='topurchases']", "xpath:attributes"],
+        ["xpath=//div[@id='price_container']/div[2]/div/form/span/span/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/form/span/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef9e6bbe-aa39-4326-9c4a-b20f160325df",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=quantity",
+      "targets": [
+        ["name=quantity", "name"],
+        ["css=input[name=\"quantity\"]", "css"],
+        ["css=.cart-amount-input-text", "css:finder"],
+        ["xpath=//input[@name='quantity']", "xpath:attributes"],
+        ["xpath=//div[@id='cart-popup']/div[2]/div[2]/div[2]/div/div[2]/div[2]/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1"
+    }]
+  }],
+  "suites": [{
+    "id": "d2f17d86-0aff-4abf-8014-d1cb3a5c0935",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9d50c8b2-823c-4353-8189-635580be15bc"]
+  }],
+  "urls": ["https://rozetka.com.ua/"],
+  "plugins": []
+}
